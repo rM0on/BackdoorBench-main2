@@ -1,0 +1,1919 @@
+2026-03-19:18:29:51 [INFO    ] [prototype.py:124] {'C_lr_scheduler': 'None',
+ 'EPSILON': 1e-07,
+ 'amp': False,
+ 'attack': 'inputaware',
+ 'attack_label_trans': 'all2one',
+ 'attack_target': 0,
+ 'batch_size': 128,
+ 'bd_yaml_path': './config/attack/inputaware/default.yaml',
+ 'clean_train_epochs': 25,
+ 'client_optimizer': 'sgd',
+ 'dataset': 'cifar10',
+ 'dataset_path': './data/cifar10',
+ 'device': 'cuda:0',
+ 'epochs': 100,
+ 'frequency_save': 0,
+ 'img_size': (32, 32, 3),
+ 'input_channel': 3,
+ 'input_height': 32,
+ 'input_width': 32,
+ 'lambda_div': 1,
+ 'lambda_norm': 100,
+ 'lr': 0.01,
+ 'lr_C': 0.01,
+ 'lr_G': 0.01,
+ 'lr_M': 0.01,
+ 'lr_scheduler': 'CosineAnnealingLR',
+ 'mask_density': 0.032,
+ 'model': 'preactresnet18',
+ 'non_blocking': True,
+ 'num_classes': 10,
+ 'num_workers': 4,
+ 'pin_memory': True,
+ 'pratio': 0.1,
+ 'prefetch': False,
+ 'random_crop': 5,
+ 'random_rotation': 10,
+ 'random_seed': 0,
+ 'save_folder_name': 'inputaware_experiment_1',
+ 'save_path': './record/inputaware_experiment_1',
+ 'schedulerC_lambda': 0.1,
+ 'schedulerC_milestones': [100, 200, 300, 400],
+ 'schedulerG_lambda': 0.1,
+ 'schedulerG_milestones': [200, 300, 400, 500],
+ 'schedulerM_lambda': 0.1,
+ 'schedulerM_milestones': [10, 20],
+ 'sgd_momentum': 0.9,
+ 'terminal_info': ['attack/inputaware.py',
+                   '--save_folder_name',
+                   'inputaware_experiment_1'],
+ 'wd': 0.0005,
+ 'yaml_path': './config/attack/prototype/cifar10.yaml'}
+2026-03-19:18:29:51 [DEBUG   ] [prototype.py:126] Only INFO or above level log will show in cmd. DEBUG level log only will show in log file.
+2026-03-19:18:29:52 [DEBUG   ] [prototype.py:132] Getting git info fails.
+2026-03-19:18:29:52 [INFO    ] [inputaware.py:317] stage1 start
+2026-03-19:18:29:53 [DEBUG   ] [prototype.py:152] dataset_and_transform_generate done
+2026-03-19:18:29:53 [DEBUG   ] [bd_dataset_v2.py:68] Not DatasetFolder or ImageFolder, so iter through
+2026-03-19:18:29:54 [DEBUG   ] [bd_dataset_v2.py:68] Not DatasetFolder or ImageFolder, so iter through
+2026-03-19:18:29:55 [INFO    ] [inputaware.py:355] stage2 start
+2026-03-19:18:29:55 [DEBUG   ] [model_trainer_generate.py:59] image_size ONLY apply for vit!!!
+If you use vit make sure you set the image size!
+2026-03-19:18:29:55 [DEBUG   ] [model_trainer_generate.py:65] Make sure you want PreActResNet18, which is NOT resnet18.
+2026-03-19:18:30:11 [INFO    ] [inputaware.py:423] Epoch 1 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:30:46 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:30:50 [INFO    ] [inputaware.py:423] Epoch 2 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:31:26 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:31:30 [INFO    ] [inputaware.py:423] Epoch 3 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:32:05 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:32:10 [INFO    ] [inputaware.py:423] Epoch 4 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:32:44 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:32:49 [INFO    ] [inputaware.py:423] Epoch 5 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:33:23 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:33:28 [INFO    ] [inputaware.py:423] Epoch 6 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:34:02 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:34:07 [INFO    ] [inputaware.py:423] Epoch 7 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:34:42 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:34:46 [INFO    ] [inputaware.py:423] Epoch 8 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:35:21 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:35:26 [INFO    ] [inputaware.py:423] Epoch 9 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:36:01 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:36:06 [INFO    ] [inputaware.py:423] Epoch 10 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:36:40 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:36:45 [INFO    ] [inputaware.py:423] Epoch 11 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:37:20 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:37:24 [INFO    ] [inputaware.py:423] Epoch 12 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:37:59 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:38:04 [INFO    ] [inputaware.py:423] Epoch 13 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:38:39 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:38:43 [INFO    ] [inputaware.py:423] Epoch 14 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:39:18 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:39:23 [INFO    ] [inputaware.py:423] Epoch 15 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:39:58 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:40:02 [INFO    ] [inputaware.py:423] Epoch 16 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:40:37 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:40:42 [INFO    ] [inputaware.py:423] Epoch 17 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:41:17 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:41:22 [INFO    ] [inputaware.py:423] Epoch 18 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:41:57 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:42:01 [INFO    ] [inputaware.py:423] Epoch 19 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:42:36 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:42:40 [INFO    ] [inputaware.py:423] Epoch 20 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:43:16 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:43:20 [INFO    ] [inputaware.py:423] Epoch 21 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:43:56 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:44:00 [INFO    ] [inputaware.py:423] Epoch 22 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:44:35 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:44:40 [INFO    ] [inputaware.py:423] Epoch 23 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:45:15 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:45:19 [INFO    ] [inputaware.py:423] Epoch 24 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:45:54 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:45:58 [INFO    ] [inputaware.py:423] Epoch 25 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1  - lambda_norm: 100:
+2026-03-19:18:46:33 [INFO    ] [inputaware.py:732]  Eval:
+2026-03-19:18:46:38 [INFO    ] [inputaware.py:471] Epoch 26 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:46:38 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:47:09 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:47:09 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:47:09 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:48:07 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.8360001562346875,
+ 'clean_test_loss_avg_over_batch': 1.2391813072977187,
+ 'cross_test_loss_avg_over_batch': 2.085033196437208,
+ 'epoch': 26,
+ 'ra_test_loss_avg_over_batch': 2.6441324462353344,
+ 'test_acc': 0.5727,
+ 'test_asr': 0.7031111111111111,
+ 'test_cross_acc': 0.31,
+ 'test_ra': 0.18922222222222224,
+ 'train_acc': 0.45972,
+ 'train_acc_clean_only': 0.45736510437179995,
+ 'train_asr_bd_only': 0.6755546075085325,
+ 'train_cross_acc_only': 0.2642918088737201,
+ 'train_epoch_loss_avg_over_batch': 2.362226141993042,
+ 'train_ra_bd_only': 0.22866894197952217}
+2026-03-19:18:48:08 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:48:08 [INFO    ] [inputaware.py:471] Epoch 27 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:48:08 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:48:39 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:48:39 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:48:39 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:49:38 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.6325397844045935,
+ 'clean_test_loss_avg_over_batch': 0.9389574391932427,
+ 'cross_test_loss_avg_over_batch': 1.6223933500579641,
+ 'epoch': 27,
+ 'ra_test_loss_avg_over_batch': 2.4521528532807255,
+ 'test_acc': 0.6708,
+ 'test_asr': 0.7812222222222223,
+ 'test_cross_acc': 0.4103,
+ 'test_ra': 0.16466666666666666,
+ 'train_acc': 0.64074,
+ 'train_acc_clean_only': 0.6509698700275699,
+ 'train_asr_bd_only': 0.8139931740614335,
+ 'train_cross_acc_only': 0.378839590443686,
+ 'train_epoch_loss_avg_over_batch': 1.7639003796955508,
+ 'train_ra_bd_only': 0.23741467576791808}
+2026-03-19:18:49:39 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:49:39 [INFO    ] [inputaware.py:471] Epoch 28 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:49:39 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:50:10 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:50:10 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:50:10 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:51:10 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.5773037357229582,
+ 'clean_test_loss_avg_over_batch': 0.8232543709911878,
+ 'cross_test_loss_avg_over_batch': 1.4622968344748775,
+ 'epoch': 28,
+ 'ra_test_loss_avg_over_batch': 2.538256947423371,
+ 'test_acc': 0.7326,
+ 'test_asr': 0.787,
+ 'test_cross_acc': 0.4782,
+ 'test_ra': 0.1837777777777778,
+ 'train_acc': 0.7131,
+ 'train_acc_clean_only': 0.7317103190232375,
+ 'train_asr_bd_only': 0.8131399317406144,
+ 'train_cross_acc_only': 0.4517918088737201,
+ 'train_epoch_loss_avg_over_batch': 1.5451882214802306,
+ 'train_ra_bd_only': 0.2521331058020478}
+2026-03-19:18:51:10 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:51:10 [INFO    ] [inputaware.py:471] Epoch 29 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:51:10 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:51:41 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:51:41 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:51:41 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:52:41 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.41186061963229115,
+ 'clean_test_loss_avg_over_batch': 0.6947077380705483,
+ 'cross_test_loss_avg_over_batch': 1.452457485319693,
+ 'epoch': 29,
+ 'ra_test_loss_avg_over_batch': 2.865517753950307,
+ 'test_acc': 0.7722,
+ 'test_asr': 0.853,
+ 'test_cross_acc': 0.4916,
+ 'test_ra': 0.1298888888888889,
+ 'train_acc': 0.76038,
+ 'train_acc_clean_only': 0.782616187475384,
+ 'train_asr_bd_only': 0.8244453924914675,
+ 'train_cross_acc_only': 0.5036262798634812,
+ 'train_epoch_loss_avg_over_batch': 1.4124994137707878,
+ 'train_ra_bd_only': 0.2589590443686007}
+2026-03-19:18:52:41 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:52:41 [INFO    ] [inputaware.py:471] Epoch 30 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:52:41 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:53:12 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:53:12 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:53:12 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:54:11 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.4902418188645806,
+ 'clean_test_loss_avg_over_batch': 0.5902846708327909,
+ 'cross_test_loss_avg_over_batch': 1.2171510201466234,
+ 'epoch': 30,
+ 'ra_test_loss_avg_over_batch': 2.5440877927860743,
+ 'test_acc': 0.8019,
+ 'test_asr': 0.8207777777777778,
+ 'test_cross_acc': 0.5502,
+ 'test_ra': 0.15688888888888888,
+ 'train_acc': 0.78664,
+ 'train_acc_clean_only': 0.808536825521859,
+ 'train_asr_bd_only': 0.835537542662116,
+ 'train_cross_acc_only': 0.547994880546075,
+ 'train_epoch_loss_avg_over_batch': 1.3347274436975074,
+ 'train_ra_bd_only': 0.23784129692832764}
+2026-03-19:18:54:12 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:54:12 [INFO    ] [inputaware.py:471] Epoch 31 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:54:12 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:54:42 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:54:42 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:54:42 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:55:42 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.9638212608619475,
+ 'clean_test_loss_avg_over_batch': 0.7609186810028704,
+ 'cross_test_loss_avg_over_batch': 1.1172746182242526,
+ 'epoch': 31,
+ 'ra_test_loss_avg_over_batch': 2.3716581337888476,
+ 'test_acc': 0.7538,
+ 'test_asr': 0.6474444444444445,
+ 'test_cross_acc': 0.618,
+ 'test_ra': 0.2871111111111111,
+ 'train_acc': 0.80554,
+ 'train_acc_clean_only': 0.8259403308389129,
+ 'train_asr_bd_only': 0.8521757679180887,
+ 'train_cross_acc_only': 0.5821245733788396,
+ 'train_epoch_loss_avg_over_batch': 1.2793183561481174,
+ 'train_ra_bd_only': 0.22653583617747441}
+2026-03-19:18:55:42 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:55:42 [INFO    ] [inputaware.py:471] Epoch 32 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:55:42 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:56:13 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:56:13 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:56:13 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:57:13 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.40284066091121085,
+ 'clean_test_loss_avg_over_batch': 0.5168020853513404,
+ 'cross_test_loss_avg_over_batch': 1.1686177133004876,
+ 'epoch': 32,
+ 'ra_test_loss_avg_over_batch': 2.8987495361919136,
+ 'test_acc': 0.8241,
+ 'test_asr': 0.8544444444444445,
+ 'test_cross_acc': 0.5847,
+ 'test_ra': 0.13033333333333333,
+ 'train_acc': 0.8206,
+ 'train_acc_clean_only': 0.8441807798345805,
+ 'train_asr_bd_only': 0.8511092150170648,
+ 'train_cross_acc_only': 0.5857508532423208,
+ 'train_epoch_loss_avg_over_batch': 1.2251098076705738,
+ 'train_ra_bd_only': 0.23570819112627986}
+2026-03-19:18:57:13 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:57:13 [INFO    ] [inputaware.py:471] Epoch 33 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:57:13 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:57:45 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:57:45 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:57:45 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:58:44 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.43384722588767466,
+ 'clean_test_loss_avg_over_batch': 0.6013154779808431,
+ 'cross_test_loss_avg_over_batch': 1.1937373770943172,
+ 'epoch': 33,
+ 'ra_test_loss_avg_over_batch': 2.9276993979870434,
+ 'test_acc': 0.8083,
+ 'test_asr': 0.8392222222222222,
+ 'test_cross_acc': 0.5901,
+ 'test_ra': 0.14577777777777778,
+ 'train_acc': 0.83558,
+ 'train_acc_clean_only': 0.8591719180779834,
+ 'train_asr_bd_only': 0.8598549488054608,
+ 'train_cross_acc_only': 0.6068686006825939,
+ 'train_epoch_loss_avg_over_batch': 1.1909532031744643,
+ 'train_ra_bd_only': 0.22674914675767918}
+2026-03-19:18:58:44 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:18:58:44 [INFO    ] [inputaware.py:471] Epoch 34 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:18:58:44 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:18:59:16 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:18:59:16 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:18:59:16 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:00:15 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.41582742795138294,
+ 'clean_test_loss_avg_over_batch': 0.463899312517311,
+ 'cross_test_loss_avg_over_batch': 1.1821119936206672,
+ 'epoch': 34,
+ 'ra_test_loss_avg_over_batch': 3.200851537811924,
+ 'test_acc': 0.8513,
+ 'test_asr': 0.8468888888888889,
+ 'test_cross_acc': 0.5997,
+ 'test_ra': 0.14266666666666666,
+ 'train_acc': 0.84244,
+ 'train_acc_clean_only': 0.8644643560456873,
+ 'train_asr_bd_only': 0.8728668941979523,
+ 'train_cross_acc_only': 0.621160409556314,
+ 'train_epoch_loss_avg_over_batch': 1.1584264937873996,
+ 'train_ra_bd_only': 0.21331058020477817}
+2026-03-19:19:00:15 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:00:15 [INFO    ] [inputaware.py:471] Epoch 35 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:00:15 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:00:46 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:00:46 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:00:46 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:01:45 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.917526576720493,
+ 'clean_test_loss_avg_over_batch': 0.5995369568655763,
+ 'cross_test_loss_avg_over_batch': 0.8864252061783513,
+ 'epoch': 35,
+ 'ra_test_loss_avg_over_batch': 1.8673189223652156,
+ 'test_acc': 0.8059,
+ 'test_asr': 0.6253333333333333,
+ 'test_cross_acc': 0.6844,
+ 'test_ra': 0.31433333333333335,
+ 'train_acc': 0.85816,
+ 'train_acc_clean_only': 0.8765754233950375,
+ 'train_asr_bd_only': 0.890358361774744,
+ 'train_cross_acc_only': 0.6663822525597269,
+ 'train_epoch_loss_avg_over_batch': 1.1231911635154959,
+ 'train_ra_bd_only': 0.19773890784982937}
+2026-03-19:19:01:45 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:01:45 [INFO    ] [inputaware.py:471] Epoch 36 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:01:45 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:02:16 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:02:16 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:02:16 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:03:16 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.31192487918994793,
+ 'clean_test_loss_avg_over_batch': 0.5294789373874664,
+ 'cross_test_loss_avg_over_batch': 1.0402421166625204,
+ 'epoch': 36,
+ 'ra_test_loss_avg_over_batch': 2.8585323380752348,
+ 'test_acc': 0.8312,
+ 'test_asr': 0.8994444444444445,
+ 'test_cross_acc': 0.612,
+ 'test_ra': 0.09066666666666667,
+ 'train_acc': 0.86192,
+ 'train_acc_clean_only': 0.8813016935801496,
+ 'train_asr_bd_only': 0.8835324232081911,
+ 'train_cross_acc_only': 0.6723549488054608,
+ 'train_epoch_loss_avg_over_batch': 1.1064455795775898,
+ 'train_ra_bd_only': 0.20968430034129693}
+2026-03-19:19:03:16 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:03:16 [INFO    ] [inputaware.py:471] Epoch 37 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:03:16 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:03:48 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:03:48 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:03:48 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:04:47 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.4341750766190005,
+ 'clean_test_loss_avg_over_batch': 0.5207261492179919,
+ 'cross_test_loss_avg_over_batch': 1.2096290331852586,
+ 'epoch': 37,
+ 'ra_test_loss_avg_over_batch': 3.312778795269174,
+ 'test_acc': 0.8402,
+ 'test_asr': 0.8363333333333334,
+ 'test_cross_acc': 0.6133,
+ 'test_ra': 0.14433333333333334,
+ 'train_acc': 0.87216,
+ 'train_acc_clean_only': 0.8913204017329658,
+ 'train_asr_bd_only': 0.893344709897611,
+ 'train_cross_acc_only': 0.6849402730375427,
+ 'train_epoch_loss_avg_over_batch': 1.0802685019305296,
+ 'train_ra_bd_only': 0.19773890784982937}
+2026-03-19:19:04:47 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:04:47 [INFO    ] [inputaware.py:471] Epoch 38 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:04:47 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:05:18 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:05:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:05:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:06:18 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.19021609782333104,
+ 'clean_test_loss_avg_over_batch': 0.47883991953692856,
+ 'cross_test_loss_avg_over_batch': 1.297190850294089,
+ 'epoch': 38,
+ 'ra_test_loss_avg_over_batch': 4.542089999561578,
+ 'test_acc': 0.8443,
+ 'test_asr': 0.9372222222222222,
+ 'test_cross_acc': 0.5929,
+ 'test_ra': 0.05466666666666667,
+ 'train_acc': 0.8792,
+ 'train_acc_clean_only': 0.8970313115399764,
+ 'train_asr_bd_only': 0.9014505119453925,
+ 'train_cross_acc_only': 0.7024317406143344,
+ 'train_epoch_loss_avg_over_batch': 1.053926463474703,
+ 'train_ra_bd_only': 0.19112627986348124}
+2026-03-19:19:06:18 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:06:18 [INFO    ] [inputaware.py:471] Epoch 39 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:06:18 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:06:50 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:06:50 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:06:50 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:07:49 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.18677384794597895,
+ 'clean_test_loss_avg_over_batch': 0.3929555306706247,
+ 'cross_test_loss_avg_over_batch': 1.1698536774780177,
+ 'epoch': 39,
+ 'ra_test_loss_avg_over_batch': 4.009508875054373,
+ 'test_acc': 0.87,
+ 'test_asr': 0.94,
+ 'test_cross_acc': 0.6024,
+ 'test_ra': 0.05533333333333333,
+ 'train_acc': 0.88366,
+ 'train_acc_clean_only': 0.902151437573848,
+ 'train_asr_bd_only': 0.9080631399317406,
+ 'train_cross_acc_only': 0.699018771331058,
+ 'train_epoch_loss_avg_over_batch': 1.0395765178038945,
+ 'train_ra_bd_only': 0.18323378839590443}
+2026-03-19:19:07:50 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:07:50 [INFO    ] [inputaware.py:471] Epoch 40 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:07:50 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:08:21 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:08:21 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:08:21 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:09:21 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.7811558213032467,
+ 'clean_test_loss_avg_over_batch': 0.40665834029264086,
+ 'cross_test_loss_avg_over_batch': 0.7601611169078683,
+ 'epoch': 40,
+ 'ra_test_loss_avg_over_batch': 1.8940755095280393,
+ 'test_acc': 0.867,
+ 'test_asr': 0.6913333333333334,
+ 'test_cross_acc': 0.7239,
+ 'test_ra': 0.2813333333333333,
+ 'train_acc': 0.88776,
+ 'train_acc_clean_only': 0.9052530523828279,
+ 'train_asr_bd_only': 0.9059300341296929,
+ 'train_cross_acc_only': 0.7180034129692833,
+ 'train_epoch_loss_avg_over_batch': 1.0244300025503348,
+ 'train_ra_bd_only': 0.19005972696245735}
+2026-03-19:19:09:21 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:09:21 [INFO    ] [inputaware.py:471] Epoch 41 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:09:21 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:09:52 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:09:52 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:09:52 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:10:51 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.23916748354972248,
+ 'clean_test_loss_avg_over_batch': 0.39697549048858355,
+ 'cross_test_loss_avg_over_batch': 1.0165115745761726,
+ 'epoch': 41,
+ 'ra_test_loss_avg_over_batch': 3.5012795186378587,
+ 'test_acc': 0.8727,
+ 'test_asr': 0.9243333333333333,
+ 'test_cross_acc': 0.6533,
+ 'test_ra': 0.06955555555555555,
+ 'train_acc': 0.891,
+ 'train_acc_clean_only': 0.9089208349743993,
+ 'train_asr_bd_only': 0.9089163822525598,
+ 'train_cross_acc_only': 0.7177901023890785,
+ 'train_epoch_loss_avg_over_batch': 1.0169214420306407,
+ 'train_ra_bd_only': 0.18771331058020477}
+2026-03-19:19:10:51 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:10:51 [INFO    ] [inputaware.py:471] Epoch 42 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:10:51 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:11:23 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:11:23 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:11:23 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:12:22 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.3071881486496455,
+ 'clean_test_loss_avg_over_batch': 0.41543838777874087,
+ 'cross_test_loss_avg_over_batch': 0.8755232333382473,
+ 'epoch': 42,
+ 'ra_test_loss_avg_over_batch': 3.07134838507209,
+ 'test_acc': 0.8644,
+ 'test_asr': 0.8894444444444445,
+ 'test_cross_acc': 0.6856,
+ 'test_ra': 0.10277777777777777,
+ 'train_acc': 0.89766,
+ 'train_acc_clean_only': 0.9136963371406065,
+ 'train_asr_bd_only': 0.9127559726962458,
+ 'train_cross_acc_only': 0.7436006825938567,
+ 'train_epoch_loss_avg_over_batch': 0.9988265299736081,
+ 'train_ra_bd_only': 0.17939419795221842}
+2026-03-19:19:12:23 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:12:23 [INFO    ] [inputaware.py:471] Epoch 43 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:12:23 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:12:54 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:12:54 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:12:54 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:13:53 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.45790576515063436,
+ 'clean_test_loss_avg_over_batch': 0.3899070794069314,
+ 'cross_test_loss_avg_over_batch': 0.7359331008754199,
+ 'epoch': 43,
+ 'ra_test_loss_avg_over_batch': 2.7487436381863875,
+ 'test_acc': 0.8762,
+ 'test_asr': 0.8375555555555556,
+ 'test_cross_acc': 0.7385,
+ 'test_ra': 0.14444444444444443,
+ 'train_acc': 0.90182,
+ 'train_acc_clean_only': 0.9169948798739661,
+ 'train_asr_bd_only': 0.9223549488054608,
+ 'train_cross_acc_only': 0.7497866894197952,
+ 'train_epoch_loss_avg_over_batch': 0.986385680220621,
+ 'train_ra_bd_only': 0.17214163822525597}
+2026-03-19:19:13:54 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:13:54 [INFO    ] [inputaware.py:471] Epoch 44 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:13:54 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:14:25 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:14:25 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:14:25 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:15:24 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.9233164938402848,
+ 'clean_test_loss_avg_over_batch': 0.4223643028283421,
+ 'cross_test_loss_avg_over_batch': 0.6480737237990657,
+ 'epoch': 44,
+ 'ra_test_loss_avg_over_batch': 2.090116687223945,
+ 'test_acc': 0.8652,
+ 'test_asr': 0.6648888888888889,
+ 'test_cross_acc': 0.7751,
+ 'test_ra': 0.2917777777777778,
+ 'train_acc': 0.9039,
+ 'train_acc_clean_only': 0.9202934226073257,
+ 'train_asr_bd_only': 0.9148890784982935,
+ 'train_cross_acc_only': 0.7508532423208191,
+ 'train_epoch_loss_avg_over_batch': 0.9807243206921745,
+ 'train_ra_bd_only': 0.1787542662116041}
+2026-03-19:19:15:24 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:15:24 [INFO    ] [inputaware.py:471] Epoch 45 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:15:24 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:15:56 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:15:56 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:15:56 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:16:55 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.14683002422393207,
+ 'clean_test_loss_avg_over_batch': 0.41543105074876474,
+ 'cross_test_loss_avg_over_batch': 1.041054663024371,
+ 'epoch': 45,
+ 'ra_test_loss_avg_over_batch': 4.3754158960261815,
+ 'test_acc': 0.8696,
+ 'test_asr': 0.9534444444444444,
+ 'test_cross_acc': 0.657,
+ 'test_ra': 0.043222222222222224,
+ 'train_acc': 0.9104,
+ 'train_acc_clean_only': 0.9276289877904687,
+ 'train_asr_bd_only': 0.9212883959044369,
+ 'train_cross_acc_only': 0.7502133105802048,
+ 'train_epoch_loss_avg_over_batch': 0.9632005302802377,
+ 'train_ra_bd_only': 0.177901023890785}
+2026-03-19:19:16:56 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:16:56 [INFO    ] [inputaware.py:471] Epoch 46 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:16:56 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:17:27 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:17:27 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:17:27 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:18:26 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.4240683518664938,
+ 'clean_test_loss_avg_over_batch': 0.38122302218328546,
+ 'cross_test_loss_avg_over_batch': 0.6953835366647455,
+ 'epoch': 46,
+ 'ra_test_loss_avg_over_batch': 2.722643496285022,
+ 'test_acc': 0.8863,
+ 'test_asr': 0.8433333333333334,
+ 'test_cross_acc': 0.7569,
+ 'test_ra': 0.1448888888888889,
+ 'train_acc': 0.9128,
+ 'train_acc_clean_only': 0.9284413154785348,
+ 'train_asr_bd_only': 0.9266211604095563,
+ 'train_cross_acc_only': 0.763438566552901,
+ 'train_epoch_loss_avg_over_batch': 0.9540125613322343,
+ 'train_ra_bd_only': 0.16232935153583616}
+2026-03-19:19:18:27 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:18:27 [INFO    ] [inputaware.py:471] Epoch 47 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:18:27 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:18:58 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:18:58 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:18:58 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:19:52 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.5208537960556191,
+ 'clean_test_loss_avg_over_batch': 0.39446077203448815,
+ 'cross_test_loss_avg_over_batch': 0.71757804555229,
+ 'epoch': 47,
+ 'ra_test_loss_avg_over_batch': 2.717770428724692,
+ 'test_acc': 0.881,
+ 'test_asr': 0.8072222222222222,
+ 'test_cross_acc': 0.7548,
+ 'test_ra': 0.16733333333333333,
+ 'train_acc': 0.91404,
+ 'train_acc_clean_only': 0.9294505710909807,
+ 'train_asr_bd_only': 0.9315273037542662,
+ 'train_cross_acc_only': 0.7630119453924915,
+ 'train_epoch_loss_avg_over_batch': 0.9525209834508579,
+ 'train_ra_bd_only': 0.16424914675767918}
+2026-03-19:19:19:53 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:19:53 [INFO    ] [inputaware.py:471] Epoch 48 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:19:53 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:20:25 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:20:25 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:20:25 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:21:13 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.18369569178198425,
+ 'clean_test_loss_avg_over_batch': 0.3643687055269374,
+ 'cross_test_loss_avg_over_batch': 0.8421100378036499,
+ 'epoch': 48,
+ 'ra_test_loss_avg_over_batch': 3.708370631849262,
+ 'test_acc': 0.888,
+ 'test_asr': 0.9431111111111111,
+ 'test_cross_acc': 0.7062,
+ 'test_ra': 0.051555555555555556,
+ 'train_acc': 0.9194,
+ 'train_acc_clean_only': 0.9335860575029539,
+ 'train_asr_bd_only': 0.9311006825938567,
+ 'train_cross_acc_only': 0.7847696245733788,
+ 'train_epoch_loss_avg_over_batch': 0.9365635095045085,
+ 'train_ra_bd_only': 0.16275597269624573}
+2026-03-19:19:21:14 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:21:14 [INFO    ] [inputaware.py:471] Epoch 49 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:21:14 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:21:43 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:21:43 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:21:43 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:22:30 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.33032177892369285,
+ 'clean_test_loss_avg_over_batch': 0.39849946789349183,
+ 'cross_test_loss_avg_over_batch': 0.7069954332671587,
+ 'epoch': 49,
+ 'ra_test_loss_avg_over_batch': 2.926538779701985,
+ 'test_acc': 0.8806,
+ 'test_asr': 0.8826666666666667,
+ 'test_cross_acc': 0.7485,
+ 'test_ra': 0.11088888888888888,
+ 'train_acc': 0.92148,
+ 'train_acc_clean_only': 0.9365153603781016,
+ 'train_asr_bd_only': 0.929820819112628,
+ 'train_cross_acc_only': 0.7828498293515358,
+ 'train_epoch_loss_avg_over_batch': 0.9330297333505148,
+ 'train_ra_bd_only': 0.1659556313993174}
+2026-03-19:19:22:30 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:22:30 [INFO    ] [inputaware.py:471] Epoch 50 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:22:30 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:23:00 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:23:00 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:23:00 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:23:47 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.2257899482485274,
+ 'clean_test_loss_avg_over_batch': 0.4186066549412812,
+ 'cross_test_loss_avg_over_batch': 0.7903958943825734,
+ 'epoch': 50,
+ 'ra_test_loss_avg_over_batch': 3.5165769180781403,
+ 'test_acc': 0.8758,
+ 'test_asr': 0.9277777777777778,
+ 'test_cross_acc': 0.7338,
+ 'test_ra': 0.06711111111111111,
+ 'train_acc': 0.92562,
+ 'train_acc_clean_only': 0.9406754627806223,
+ 'train_asr_bd_only': 0.933660409556314,
+ 'train_cross_acc_only': 0.7871160409556314,
+ 'train_epoch_loss_avg_over_batch': 0.9208232031758788,
+ 'train_ra_bd_only': 0.16446245733788395}
+2026-03-19:19:23:48 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:23:48 [INFO    ] [inputaware.py:471] Epoch 51 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:23:48 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:24:18 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:24:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:24:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:25:06 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.41383299903130866,
+ 'clean_test_loss_avg_over_batch': 0.35433256531818,
+ 'cross_test_loss_avg_over_batch': 0.6598704766623581,
+ 'epoch': 51,
+ 'ra_test_loss_avg_over_batch': 2.8027374945895773,
+ 'test_acc': 0.8935,
+ 'test_asr': 0.8511111111111112,
+ 'test_cross_acc': 0.7689,
+ 'test_ra': 0.13766666666666666,
+ 'train_acc': 0.9281,
+ 'train_acc_clean_only': 0.9431862938164631,
+ 'train_asr_bd_only': 0.9351535836177475,
+ 'train_cross_acc_only': 0.7903156996587031,
+ 'train_epoch_loss_avg_over_batch': 0.9127158193332156,
+ 'train_ra_bd_only': 0.1631825938566553}
+2026-03-19:19:25:06 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:25:06 [INFO    ] [inputaware.py:471] Epoch 52 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:25:06 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:25:35 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:25:35 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:25:35 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:26:22 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.18117219251646122,
+ 'clean_test_loss_avg_over_batch': 0.3432028749132458,
+ 'cross_test_loss_avg_over_batch': 0.7942393859730491,
+ 'epoch': 52,
+ 'ra_test_loss_avg_over_batch': 3.8237752343567326,
+ 'test_acc': 0.8956,
+ 'test_asr': 0.9404444444444444,
+ 'test_cross_acc': 0.7319,
+ 'test_ra': 0.056666666666666664,
+ 'train_acc': 0.92832,
+ 'train_acc_clean_only': 0.942693974005514,
+ 'train_asr_bd_only': 0.9385665529010239,
+ 'train_cross_acc_only': 0.7935153583617748,
+ 'train_epoch_loss_avg_over_batch': 0.9106472239774817,
+ 'train_ra_bd_only': 0.15806313993174062}
+2026-03-19:19:26:22 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:26:22 [INFO    ] [inputaware.py:471] Epoch 53 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:26:22 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:26:51 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:26:51 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:26:51 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:27:39 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.21145700789253477,
+ 'clean_test_loss_avg_over_batch': 0.3381610024201719,
+ 'cross_test_loss_avg_over_batch': 0.6984212258948556,
+ 'epoch': 53,
+ 'ra_test_loss_avg_over_batch': 3.2764032357175585,
+ 'test_acc': 0.8938,
+ 'test_asr': 0.9324444444444444,
+ 'test_cross_acc': 0.7532,
+ 'test_ra': 0.063,
+ 'train_acc': 0.92954,
+ 'train_acc_clean_only': 0.9440232374950768,
+ 'train_asr_bd_only': 0.9402730375426621,
+ 'train_cross_acc_only': 0.79330204778157,
+ 'train_epoch_loss_avg_over_batch': 0.9009599658229467,
+ 'train_ra_bd_only': 0.1601962457337884}
+2026-03-19:19:27:39 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:27:39 [INFO    ] [inputaware.py:471] Epoch 54 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:27:39 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:28:09 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:28:09 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:28:09 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:28:56 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.27958697962089324,
+ 'clean_test_loss_avg_over_batch': 0.33574762978131256,
+ 'cross_test_loss_avg_over_batch': 0.6717812260494956,
+ 'epoch': 54,
+ 'ra_test_loss_avg_over_batch': 3.197800193034427,
+ 'test_acc': 0.8955,
+ 'test_asr': 0.903,
+ 'test_cross_acc': 0.7593,
+ 'test_ra': 0.08955555555555555,
+ 'train_acc': 0.93282,
+ 'train_acc_clean_only': 0.9479864119732178,
+ 'train_asr_bd_only': 0.9396331058020477,
+ 'train_cross_acc_only': 0.7945819112627986,
+ 'train_epoch_loss_avg_over_batch': 0.8967841348379774,
+ 'train_ra_bd_only': 0.1514505119453925}
+2026-03-19:19:28:57 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:28:57 [INFO    ] [inputaware.py:471] Epoch 55 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:28:57 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:29:26 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:29:26 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:29:26 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:30:14 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.551456544600742,
+ 'clean_test_loss_avg_over_batch': 0.4684875984735127,
+ 'cross_test_loss_avg_over_batch': 0.7521274501009833,
+ 'epoch': 55,
+ 'ra_test_loss_avg_over_batch': 2.7795439673141695,
+ 'test_acc': 0.87,
+ 'test_asr': 0.7977777777777778,
+ 'test_cross_acc': 0.7629,
+ 'test_ra': 0.17022222222222222,
+ 'train_acc': 0.93478,
+ 'train_acc_clean_only': 0.9498572272548247,
+ 'train_asr_bd_only': 0.9396331058020477,
+ 'train_cross_acc_only': 0.7992747440273038,
+ 'train_epoch_loss_avg_over_batch': 0.8872219101547281,
+ 'train_ra_bd_only': 0.1523037542662116}
+2026-03-19:19:30:14 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:30:14 [INFO    ] [inputaware.py:471] Epoch 56 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:30:14 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:30:44 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:30:44 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:30:44 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:31:31 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.12294785646905362,
+ 'clean_test_loss_avg_over_batch': 0.3283983851912655,
+ 'cross_test_loss_avg_over_batch': 0.7855271983750259,
+ 'epoch': 56,
+ 'ra_test_loss_avg_over_batch': 3.9775391800302855,
+ 'test_acc': 0.8994,
+ 'test_asr': 0.9665555555555555,
+ 'test_cross_acc': 0.7315,
+ 'test_ra': 0.032,
+ 'train_acc': 0.9357,
+ 'train_acc_clean_only': 0.949660299330445,
+ 'train_asr_bd_only': 0.9419795221843004,
+ 'train_cross_acc_only': 0.8084470989761092,
+ 'train_epoch_loss_avg_over_batch': 0.8854174709990811,
+ 'train_ra_bd_only': 0.16574232081911264}
+2026-03-19:19:31:32 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:31:32 [INFO    ] [inputaware.py:471] Epoch 57 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:31:32 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:32:01 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:32:01 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:32:01 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:32:48 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.20283025356245712,
+ 'clean_test_loss_avg_over_batch': 0.35142419888060306,
+ 'cross_test_loss_avg_over_batch': 0.7191750116740601,
+ 'epoch': 57,
+ 'ra_test_loss_avg_over_batch': 3.361102282161444,
+ 'test_acc': 0.8966,
+ 'test_asr': 0.934,
+ 'test_cross_acc': 0.7549,
+ 'test_ra': 0.06277777777777778,
+ 'train_acc': 0.93914,
+ 'train_acc_clean_only': 0.9525649862150453,
+ 'train_asr_bd_only': 0.9507252559726962,
+ 'train_cross_acc_only': 0.8112201365187713,
+ 'train_epoch_loss_avg_over_batch': 0.8778708557338666,
+ 'train_ra_bd_only': 0.14867747440273038}
+2026-03-19:19:32:49 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:32:49 [INFO    ] [inputaware.py:471] Epoch 58 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:32:49 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:33:18 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:33:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:33:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:34:05 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.17289118342836138,
+ 'clean_test_loss_avg_over_batch': 0.3789401106253455,
+ 'cross_test_loss_avg_over_batch': 0.7671145268633396,
+ 'epoch': 58,
+ 'ra_test_loss_avg_over_batch': 3.807811844516808,
+ 'test_acc': 0.8865,
+ 'test_asr': 0.9454444444444444,
+ 'test_cross_acc': 0.7399,
+ 'test_ra': 0.050888888888888886,
+ 'train_acc': 0.94006,
+ 'train_acc_clean_only': 0.9529834580543521,
+ 'train_asr_bd_only': 0.9430460750853242,
+ 'train_cross_acc_only': 0.8250853242320819,
+ 'train_epoch_loss_avg_over_batch': 0.8767742875896757,
+ 'train_ra_bd_only': 0.15763651877133106}
+2026-03-19:19:34:06 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:34:06 [INFO    ] [inputaware.py:471] Epoch 59 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:34:06 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:34:36 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:34:36 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:34:36 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:35:24 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.23799960609053222,
+ 'clean_test_loss_avg_over_batch': 0.33167016138381594,
+ 'cross_test_loss_avg_over_batch': 0.7697264933133428,
+ 'epoch': 59,
+ 'ra_test_loss_avg_over_batch': 3.737200350828574,
+ 'test_acc': 0.903,
+ 'test_asr': 0.9234444444444444,
+ 'test_cross_acc': 0.7434,
+ 'test_ra': 0.07033333333333333,
+ 'train_acc': 0.94116,
+ 'train_acc_clean_only': 0.9553958251280031,
+ 'train_asr_bd_only': 0.9453924914675768,
+ 'train_cross_acc_only': 0.8135665529010239,
+ 'train_epoch_loss_avg_over_batch': 0.8699406293956825,
+ 'train_ra_bd_only': 0.1503839590443686}
+2026-03-19:19:35:24 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:35:24 [INFO    ] [inputaware.py:471] Epoch 60 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:35:24 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:35:53 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:35:53 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:35:53 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:36:40 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.19334897787218364,
+ 'clean_test_loss_avg_over_batch': 0.3594070661671554,
+ 'cross_test_loss_avg_over_batch': 0.6662226123145863,
+ 'epoch': 60,
+ 'ra_test_loss_avg_over_batch': 3.747788694542898,
+ 'test_acc': 0.8936,
+ 'test_asr': 0.9342222222222222,
+ 'test_cross_acc': 0.7741,
+ 'test_ra': 0.06055555555555556,
+ 'train_acc': 0.94192,
+ 'train_acc_clean_only': 0.956134304844427,
+ 'train_asr_bd_only': 0.9453924914675768,
+ 'train_cross_acc_only': 0.8152730375426621,
+ 'train_epoch_loss_avg_over_batch': 0.8723243342336181,
+ 'train_ra_bd_only': 0.1533703071672355}
+2026-03-19:19:36:40 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:36:40 [INFO    ] [inputaware.py:471] Epoch 61 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:36:40 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:37:10 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:37:10 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:37:10 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:37:57 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.4264217728460339,
+ 'clean_test_loss_avg_over_batch': 0.3297554992045028,
+ 'cross_test_loss_avg_over_batch': 0.5339662889136544,
+ 'epoch': 61,
+ 'ra_test_loss_avg_over_batch': 2.8982309522763106,
+ 'test_acc': 0.9068,
+ 'test_asr': 0.8487777777777777,
+ 'test_cross_acc': 0.8218,
+ 'test_ra': 0.14144444444444446,
+ 'train_acc': 0.947,
+ 'train_acc_clean_only': 0.960097479322568,
+ 'train_asr_bd_only': 0.9522184300341296,
+ 'train_cross_acc_only': 0.8282849829351536,
+ 'train_epoch_loss_avg_over_batch': 0.8558503082951011,
+ 'train_ra_bd_only': 0.14889078498293515}
+2026-03-19:19:37:58 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:37:58 [INFO    ] [inputaware.py:471] Epoch 62 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:37:58 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:38:27 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:38:27 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:38:27 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:39:14 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.2950243141869424,
+ 'clean_test_loss_avg_over_batch': 0.33649725504691086,
+ 'cross_test_loss_avg_over_batch': 0.5562223539322237,
+ 'epoch': 62,
+ 'ra_test_loss_avg_over_batch': 2.89178372101045,
+ 'test_acc': 0.906,
+ 'test_asr': 0.8926666666666667,
+ 'test_cross_acc': 0.8096,
+ 'test_ra': 0.10011111111111111,
+ 'train_acc': 0.94662,
+ 'train_acc_clean_only': 0.9607374950768018,
+ 'train_asr_bd_only': 0.9496587030716723,
+ 'train_cross_acc_only': 0.8212457337883959,
+ 'train_epoch_loss_avg_over_batch': 0.8546094841054638,
+ 'train_ra_bd_only': 0.14803754266211605}
+2026-03-19:19:39:15 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:39:15 [INFO    ] [inputaware.py:471] Epoch 63 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:39:15 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:39:45 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:39:45 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:39:45 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:40:33 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.2859305057307364,
+ 'clean_test_loss_avg_over_batch': 0.3852659445020217,
+ 'cross_test_loss_avg_over_batch': 0.6496493914459325,
+ 'epoch': 63,
+ 'ra_test_loss_avg_over_batch': 3.1371376984555956,
+ 'test_acc': 0.889,
+ 'test_asr': 0.9007777777777778,
+ 'test_cross_acc': 0.7833,
+ 'test_ra': 0.09022222222222222,
+ 'train_acc': 0.94772,
+ 'train_acc_clean_only': 0.961229814887751,
+ 'train_asr_bd_only': 0.9526450511945392,
+ 'train_cross_acc_only': 0.8257252559726962,
+ 'train_epoch_loss_avg_over_batch': 0.8533908538806164,
+ 'train_ra_bd_only': 0.14505119453924914}
+2026-03-19:19:40:33 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:40:33 [INFO    ] [inputaware.py:471] Epoch 64 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:40:33 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:41:03 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:41:03 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:41:03 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:41:50 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.25166732408631015,
+ 'clean_test_loss_avg_over_batch': 0.40095477560652965,
+ 'cross_test_loss_avg_over_batch': 0.7557067686243902,
+ 'epoch': 64,
+ 'ra_test_loss_avg_over_batch': 3.4272200322486985,
+ 'test_acc': 0.8911,
+ 'test_asr': 0.9124444444444444,
+ 'test_cross_acc': 0.7619,
+ 'test_ra': 0.08244444444444445,
+ 'train_acc': 0.94892,
+ 'train_acc_clean_only': 0.9623621504529343,
+ 'train_asr_bd_only': 0.9485921501706485,
+ 'train_cross_acc_only': 0.8327645051194539,
+ 'train_epoch_loss_avg_over_batch': 0.8530179746925374,
+ 'train_ra_bd_only': 0.14825085324232082}
+2026-03-19:19:41:51 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:41:51 [INFO    ] [inputaware.py:471] Epoch 65 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:41:51 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:42:20 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:42:20 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:42:20 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:43:08 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.12222696830269317,
+ 'clean_test_loss_avg_over_batch': 0.4003738530828983,
+ 'cross_test_loss_avg_over_batch': 0.8051744201515294,
+ 'epoch': 65,
+ 'ra_test_loss_avg_over_batch': 4.041534809999063,
+ 'test_acc': 0.8926,
+ 'test_asr': 0.9637777777777777,
+ 'test_cross_acc': 0.7339,
+ 'test_ra': 0.033,
+ 'train_acc': 0.94972,
+ 'train_acc_clean_only': 0.9638391098857818,
+ 'train_asr_bd_only': 0.9526450511945392,
+ 'train_cross_acc_only': 0.8244453924914675,
+ 'train_epoch_loss_avg_over_batch': 0.8482324985591957,
+ 'train_ra_bd_only': 0.13993174061433447}
+2026-03-19:19:43:08 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:43:08 [INFO    ] [inputaware.py:471] Epoch 66 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:43:08 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:43:38 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:43:38 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:43:38 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:44:25 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.07540348612926376,
+ 'clean_test_loss_avg_over_batch': 0.3173770870589003,
+ 'cross_test_loss_avg_over_batch': 0.8896369119233722,
+ 'epoch': 66,
+ 'ra_test_loss_avg_over_batch': 4.963147196971195,
+ 'test_acc': 0.9064,
+ 'test_asr': 0.9791111111111112,
+ 'test_cross_acc': 0.7135,
+ 'test_ra': 0.018444444444444444,
+ 'train_acc': 0.95156,
+ 'train_acc_clean_only': 0.964651437573848,
+ 'train_asr_bd_only': 0.9556313993174061,
+ 'train_cross_acc_only': 0.8340443686006825,
+ 'train_epoch_loss_avg_over_batch': 0.8396968747038975,
+ 'train_ra_bd_only': 0.14718430034129693}
+2026-03-19:19:44:26 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:44:26 [INFO    ] [inputaware.py:471] Epoch 67 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:44:26 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:44:56 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:44:56 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:44:56 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:45:43 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.17817982275721053,
+ 'clean_test_loss_avg_over_batch': 0.3454960957169533,
+ 'cross_test_loss_avg_over_batch': 0.7389923171906532,
+ 'epoch': 67,
+ 'ra_test_loss_avg_over_batch': 3.9867623826147804,
+ 'test_acc': 0.9033,
+ 'test_asr': 0.9426666666666667,
+ 'test_cross_acc': 0.7593,
+ 'test_ra': 0.052444444444444446,
+ 'train_acc': 0.95218,
+ 'train_acc_clean_only': 0.9656853091768413,
+ 'train_asr_bd_only': 0.9545648464163823,
+ 'train_cross_acc_only': 0.8327645051194539,
+ 'train_epoch_loss_avg_over_batch': 0.8413010731987332,
+ 'train_ra_bd_only': 0.14099829351535836}
+2026-03-19:19:45:43 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:45:43 [INFO    ] [inputaware.py:471] Epoch 68 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:45:43 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:46:13 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:46:13 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:46:13 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:47:00 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.16876803537909413,
+ 'clean_test_loss_avg_over_batch': 0.3422746026440512,
+ 'cross_test_loss_avg_over_batch': 0.6538952898375595,
+ 'epoch': 68,
+ 'ra_test_loss_avg_over_batch': 3.5910627036027507,
+ 'test_acc': 0.9039,
+ 'test_asr': 0.948,
+ 'test_cross_acc': 0.7772,
+ 'test_ra': 0.04788888888888889,
+ 'train_acc': 0.95204,
+ 'train_acc_clean_only': 0.9643560456872785,
+ 'train_asr_bd_only': 0.9507252559726962,
+ 'train_cross_acc_only': 0.8466296928327645,
+ 'train_epoch_loss_avg_over_batch': 0.839931105103944,
+ 'train_ra_bd_only': 0.15166382252559726}
+2026-03-19:19:47:01 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:47:01 [INFO    ] [inputaware.py:471] Epoch 69 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:47:01 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:47:30 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:47:30 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:47:30 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:48:17 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.1951832567722025,
+ 'clean_test_loss_avg_over_batch': 0.36781096571608435,
+ 'cross_test_loss_avg_over_batch': 0.6980411255661445,
+ 'epoch': 69,
+ 'ra_test_loss_avg_over_batch': 3.4986728916705494,
+ 'test_acc': 0.8984,
+ 'test_asr': 0.9372222222222222,
+ 'test_cross_acc': 0.767,
+ 'test_ra': 0.05988888888888889,
+ 'train_acc': 0.95332,
+ 'train_acc_clean_only': 0.9654145332808192,
+ 'train_asr_bd_only': 0.9573378839590444,
+ 'train_cross_acc_only': 0.8444965870307167,
+ 'train_epoch_loss_avg_over_batch': 0.8367385249918379,
+ 'train_ra_bd_only': 0.1427047781569966}
+2026-03-19:19:48:18 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:48:18 [INFO    ] [inputaware.py:471] Epoch 70 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:48:18 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:48:48 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:48:48 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:48:48 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:49:35 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.2160430481316338,
+ 'clean_test_loss_avg_over_batch': 0.3348718698643431,
+ 'cross_test_loss_avg_over_batch': 0.6863888170145735,
+ 'epoch': 70,
+ 'ra_test_loss_avg_over_batch': 3.4463846482021707,
+ 'test_acc': 0.9063,
+ 'test_asr': 0.9261111111111111,
+ 'test_cross_acc': 0.7699,
+ 'test_ra': 0.06855555555555555,
+ 'train_acc': 0.953,
+ 'train_acc_clean_only': 0.9648483654982276,
+ 'train_asr_bd_only': 0.955844709897611,
+ 'train_cross_acc_only': 0.8474829351535836,
+ 'train_epoch_loss_avg_over_batch': 0.8380026750247497,
+ 'train_ra_bd_only': 0.14377133105802048}
+2026-03-19:19:49:36 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:49:36 [INFO    ] [inputaware.py:471] Epoch 71 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:49:36 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:50:04 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:50:04 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:50:04 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:50:52 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.2942858963785037,
+ 'clean_test_loss_avg_over_batch': 0.3545214056591444,
+ 'cross_test_loss_avg_over_batch': 0.6081269168401067,
+ 'epoch': 71,
+ 'ra_test_loss_avg_over_batch': 3.043243821238128,
+ 'test_acc': 0.9053,
+ 'test_asr': 0.8956666666666667,
+ 'test_cross_acc': 0.7967,
+ 'test_ra': 0.096,
+ 'train_acc': 0.9544,
+ 'train_acc_clean_only': 0.9669161087042143,
+ 'train_asr_bd_only': 0.9581911262798635,
+ 'train_cross_acc_only': 0.8421501706484642,
+ 'train_epoch_loss_avg_over_batch': 0.833856293612429,
+ 'train_ra_bd_only': 0.14846416382252559}
+2026-03-19:19:50:52 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:50:52 [INFO    ] [inputaware.py:471] Epoch 72 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:50:52 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:51:22 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:51:22 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:51:22 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:52:09 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.305934479328948,
+ 'clean_test_loss_avg_over_batch': 0.32653183848420275,
+ 'cross_test_loss_avg_over_batch': 0.5974879974051367,
+ 'epoch': 72,
+ 'ra_test_loss_avg_over_batch': 3.2589335206528784,
+ 'test_acc': 0.9084,
+ 'test_asr': 0.8885555555555555,
+ 'test_cross_acc': 0.7947,
+ 'test_ra': 0.10522222222222222,
+ 'train_acc': 0.95396,
+ 'train_acc_clean_only': 0.9659807010634108,
+ 'train_asr_bd_only': 0.9569112627986348,
+ 'train_cross_acc_only': 0.8468430034129693,
+ 'train_epoch_loss_avg_over_batch': 0.8360603273372211,
+ 'train_ra_bd_only': 0.14398464163822525}
+2026-03-19:19:52:10 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:52:10 [INFO    ] [inputaware.py:471] Epoch 73 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:52:10 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:52:39 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:52:39 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:52:39 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:53:26 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.11741762681746147,
+ 'clean_test_loss_avg_over_batch': 0.3590667772142193,
+ 'cross_test_loss_avg_over_batch': 0.7107258993613569,
+ 'epoch': 73,
+ 'ra_test_loss_avg_over_batch': 4.336143265307789,
+ 'test_acc': 0.9022,
+ 'test_asr': 0.9632222222222222,
+ 'test_cross_acc': 0.7712,
+ 'test_ra': 0.03344444444444444,
+ 'train_acc': 0.95716,
+ 'train_acc_clean_only': 0.9700423395037416,
+ 'train_asr_bd_only': 0.9549914675767918,
+ 'train_cross_acc_only': 0.8476962457337884,
+ 'train_epoch_loss_avg_over_batch': 0.8214918507639405,
+ 'train_ra_bd_only': 0.1405716723549488}
+2026-03-19:19:53:27 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:53:27 [INFO    ] [inputaware.py:471] Epoch 74 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:53:27 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:53:57 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:53:57 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:53:57 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:54:44 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.09031646976798353,
+ 'clean_test_loss_avg_over_batch': 0.33981075694289387,
+ 'cross_test_loss_avg_over_batch': 0.7346141413797306,
+ 'epoch': 74,
+ 'ra_test_loss_avg_over_batch': 4.4675438907784475,
+ 'test_acc': 0.9075,
+ 'test_asr': 0.9737777777777777,
+ 'test_cross_acc': 0.7617,
+ 'test_ra': 0.025111111111111112,
+ 'train_acc': 0.95744,
+ 'train_acc_clean_only': 0.9695254037022449,
+ 'train_asr_bd_only': 0.9586177474402731,
+ 'train_cross_acc_only': 0.8515358361774744,
+ 'train_epoch_loss_avg_over_batch': 0.8225368230848971,
+ 'train_ra_bd_only': 0.14035836177474403}
+2026-03-19:19:54:45 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:54:45 [INFO    ] [inputaware.py:471] Epoch 75 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:54:45 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:55:14 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:55:14 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:55:14 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:56:01 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.24919841889764222,
+ 'clean_test_loss_avg_over_batch': 0.3474190014449856,
+ 'cross_test_loss_avg_over_batch': 0.6110397969620137,
+ 'epoch': 75,
+ 'ra_test_loss_avg_over_batch': 3.6059801343461158,
+ 'test_acc': 0.9073,
+ 'test_asr': 0.9133333333333333,
+ 'test_cross_acc': 0.8045,
+ 'test_ra': 0.08066666666666666,
+ 'train_acc': 0.9587,
+ 'train_acc_clean_only': 0.971346987002757,
+ 'train_asr_bd_only': 0.9598976109215017,
+ 'train_cross_acc_only': 0.8479095563139932,
+ 'train_epoch_loss_avg_over_batch': 0.8190634284178009,
+ 'train_ra_bd_only': 0.14227815699658702}
+2026-03-19:19:56:01 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:56:01 [INFO    ] [inputaware.py:471] Epoch 76 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:56:01 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:56:30 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:56:30 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:56:30 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:57:18 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.3113337373229819,
+ 'clean_test_loss_avg_over_batch': 0.3104676506187342,
+ 'cross_test_loss_avg_over_batch': 0.5978192498412314,
+ 'epoch': 76,
+ 'ra_test_loss_avg_over_batch': 3.1331487205666555,
+ 'test_acc': 0.9159,
+ 'test_asr': 0.8924444444444445,
+ 'test_cross_acc': 0.8028,
+ 'test_ra': 0.1,
+ 'train_acc': 0.95612,
+ 'train_acc_clean_only': 0.9685899960614415,
+ 'train_asr_bd_only': 0.9526450511945392,
+ 'train_cross_acc_only': 0.8515358361774744,
+ 'train_epoch_loss_avg_over_batch': 0.8257440093838041,
+ 'train_ra_bd_only': 0.14953071672354948}
+2026-03-19:19:57:18 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:57:18 [INFO    ] [inputaware.py:471] Epoch 77 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:57:18 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:57:47 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:57:47 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:57:47 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:58:36 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.13550523227789033,
+ 'clean_test_loss_avg_over_batch': 0.35706482011872004,
+ 'cross_test_loss_avg_over_batch': 0.7235119557833369,
+ 'epoch': 77,
+ 'ra_test_loss_avg_over_batch': 4.052344694943495,
+ 'test_acc': 0.9079,
+ 'test_asr': 0.9576666666666667,
+ 'test_cross_acc': 0.774,
+ 'test_ra': 0.03988888888888889,
+ 'train_acc': 0.95908,
+ 'train_acc_clean_only': 0.9706823552579755,
+ 'train_asr_bd_only': 0.9569112627986348,
+ 'train_cross_acc_only': 0.8607081911262798,
+ 'train_epoch_loss_avg_over_batch': 0.8174787738439068,
+ 'train_ra_bd_only': 0.13907849829351535}
+2026-03-19:19:58:36 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:58:36 [INFO    ] [inputaware.py:471] Epoch 78 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:58:36 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:19:59:06 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:19:59:06 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:59:06 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:19:59:54 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.22493334849115829,
+ 'clean_test_loss_avg_over_batch': 0.3486587182630467,
+ 'cross_test_loss_avg_over_batch': 0.6310380844375755,
+ 'epoch': 78,
+ 'ra_test_loss_avg_over_batch': 3.6858898787431316,
+ 'test_acc': 0.9049,
+ 'test_asr': 0.9254444444444444,
+ 'test_cross_acc': 0.7971,
+ 'test_ra': 0.06766666666666667,
+ 'train_acc': 0.95726,
+ 'train_acc_clean_only': 0.9708054352107128,
+ 'train_asr_bd_only': 0.9556313993174061,
+ 'train_cross_acc_only': 0.8415102389078498,
+ 'train_epoch_loss_avg_over_batch': 0.823881975372734,
+ 'train_ra_bd_only': 0.13545221843003413}
+2026-03-19:19:59:54 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:19:59:54 [INFO    ] [inputaware.py:471] Epoch 79 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:19:59:54 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:00:28 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:00:28 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:00:28 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:01:50 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.13797411941726442,
+ 'clean_test_loss_avg_over_batch': 0.33136219936835615,
+ 'cross_test_loss_avg_over_batch': 0.6708511955375913,
+ 'epoch': 79,
+ 'ra_test_loss_avg_over_batch': 4.199339154740454,
+ 'test_acc': 0.9144,
+ 'test_asr': 0.9554444444444444,
+ 'test_cross_acc': 0.7847,
+ 'test_ra': 0.04111111111111111,
+ 'train_acc': 0.96084,
+ 'train_acc_clean_only': 0.9729470263883419,
+ 'train_asr_bd_only': 0.9584044368600683,
+ 'train_cross_acc_only': 0.8583617747440273,
+ 'train_epoch_loss_avg_over_batch': 0.8137430725500102,
+ 'train_ra_bd_only': 0.1405716723549488}
+2026-03-19:20:01:50 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:01:50 [INFO    ] [inputaware.py:471] Epoch 80 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:01:50 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:02:25 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:02:25 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:02:25 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:03:47 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.09022538379674226,
+ 'clean_test_loss_avg_over_batch': 0.3261342307057562,
+ 'cross_test_loss_avg_over_batch': 0.7533690431449986,
+ 'epoch': 80,
+ 'ra_test_loss_avg_over_batch': 4.2645865594837025,
+ 'test_acc': 0.9112,
+ 'test_asr': 0.9766666666666667,
+ 'test_cross_acc': 0.7591,
+ 'test_ra': 0.022111111111111113,
+ 'train_acc': 0.96058,
+ 'train_acc_clean_only': 0.9726516345017724,
+ 'train_asr_bd_only': 0.95669795221843,
+ 'train_cross_acc_only': 0.8598549488054608,
+ 'train_epoch_loss_avg_over_batch': 0.815207115219682,
+ 'train_ra_bd_only': 0.13907849829351535}
+2026-03-19:20:03:48 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:03:48 [INFO    ] [inputaware.py:471] Epoch 81 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:03:48 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:04:23 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:04:23 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:04:23 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:05:42 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.11038533341087087,
+ 'clean_test_loss_avg_over_batch': 0.3783681826500953,
+ 'cross_test_loss_avg_over_batch': 0.8015856512739689,
+ 'epoch': 81,
+ 'ra_test_loss_avg_over_batch': 4.388182438595194,
+ 'test_acc': 0.9008,
+ 'test_asr': 0.9681111111111111,
+ 'test_cross_acc': 0.7451,
+ 'test_ra': 0.028666666666666667,
+ 'train_acc': 0.9631,
+ 'train_acc_clean_only': 0.974399369830642,
+ 'train_asr_bd_only': 0.9609641638225256,
+ 'train_cross_acc_only': 0.867320819112628,
+ 'train_epoch_loss_avg_over_batch': 0.8122214292321364,
+ 'train_ra_bd_only': 0.13715870307167236}
+2026-03-19:20:05:42 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:05:42 [INFO    ] [inputaware.py:471] Epoch 82 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:05:42 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:06:12 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:06:12 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:06:12 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:06:59 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.11402007916443785,
+ 'clean_test_loss_avg_over_batch': 0.35926450600352466,
+ 'cross_test_loss_avg_over_batch': 0.6854523250573799,
+ 'epoch': 82,
+ 'ra_test_loss_avg_over_batch': 4.323117897544108,
+ 'test_acc': 0.9015,
+ 'test_asr': 0.9668888888888889,
+ 'test_cross_acc': 0.776,
+ 'test_ra': 0.03133333333333333,
+ 'train_acc': 0.96152,
+ 'train_acc_clean_only': 0.9724054745962978,
+ 'train_asr_bd_only': 0.9641638225255973,
+ 'train_cross_acc_only': 0.8645477815699659,
+ 'train_epoch_loss_avg_over_batch': 0.8135847559060587,
+ 'train_ra_bd_only': 0.13161262798634812}
+2026-03-19:20:07:00 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:07:00 [INFO    ] [inputaware.py:471] Epoch 83 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:07:00 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:07:30 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:07:30 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:07:30 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:08:17 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.1780254178693597,
+ 'clean_test_loss_avg_over_batch': 0.32539611517251293,
+ 'cross_test_loss_avg_over_batch': 0.6487173641784282,
+ 'epoch': 83,
+ 'ra_test_loss_avg_over_batch': 3.772153803999995,
+ 'test_acc': 0.9072,
+ 'test_asr': 0.9426666666666667,
+ 'test_cross_acc': 0.7842,
+ 'test_ra': 0.05333333333333334,
+ 'train_acc': 0.96098,
+ 'train_acc_clean_only': 0.9736116581331232,
+ 'train_asr_bd_only': 0.9564846416382252,
+ 'train_cross_acc_only': 0.8560153583617748,
+ 'train_epoch_loss_avg_over_batch': 0.8121210159852986,
+ 'train_ra_bd_only': 0.14291808873720135}
+2026-03-19:20:08:17 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:08:17 [INFO    ] [inputaware.py:471] Epoch 84 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:08:17 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:08:47 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:08:47 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:08:47 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:09:34 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.15436494077595186,
+ 'clean_test_loss_avg_over_batch': 0.3848168851831291,
+ 'cross_test_loss_avg_over_batch': 0.7113900697683986,
+ 'epoch': 84,
+ 'ra_test_loss_avg_over_batch': 4.067217057859394,
+ 'test_acc': 0.9008,
+ 'test_asr': 0.9493333333333334,
+ 'test_cross_acc': 0.771,
+ 'test_ra': 0.04877777777777778,
+ 'train_acc': 0.96204,
+ 'train_acc_clean_only': 0.9740547459629776,
+ 'train_asr_bd_only': 0.9592576791808873,
+ 'train_cross_acc_only': 0.8607081911262798,
+ 'train_epoch_loss_avg_over_batch': 0.80695007813861,
+ 'train_ra_bd_only': 0.1454778156996587}
+2026-03-19:20:09:34 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:09:34 [INFO    ] [inputaware.py:471] Epoch 85 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:09:34 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:10:04 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:10:04 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:10:04 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:10:51 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.06960108293823793,
+ 'clean_test_loss_avg_over_batch': 0.3225780519880826,
+ 'cross_test_loss_avg_over_batch': 0.715936206186874,
+ 'epoch': 85,
+ 'ra_test_loss_avg_over_batch': 4.553552795463885,
+ 'test_acc': 0.9125,
+ 'test_asr': 0.9817777777777777,
+ 'test_cross_acc': 0.7665,
+ 'test_ra': 0.017222222222222222,
+ 'train_acc': 0.9629,
+ 'train_acc_clean_only': 0.9750640015754234,
+ 'train_asr_bd_only': 0.95669795221843,
+ 'train_cross_acc_only': 0.8636945392491467,
+ 'train_epoch_loss_avg_over_batch': 0.8081594697959588,
+ 'train_ra_bd_only': 0.13801194539249148}
+2026-03-19:20:10:52 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:10:52 [INFO    ] [inputaware.py:471] Epoch 86 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:10:52 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:11:21 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:11:21 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:11:21 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:12:10 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.22616562709002427,
+ 'clean_test_loss_avg_over_batch': 0.3454154932612105,
+ 'cross_test_loss_avg_over_batch': 0.6065375691727747,
+ 'epoch': 86,
+ 'ra_test_loss_avg_over_batch': 3.143996409966912,
+ 'test_acc': 0.9092,
+ 'test_asr': 0.9227777777777778,
+ 'test_cross_acc': 0.8003,
+ 'test_ra': 0.07377777777777778,
+ 'train_acc': 0.96348,
+ 'train_acc_clean_only': 0.9757286333202048,
+ 'train_asr_bd_only': 0.9618174061433447,
+ 'train_cross_acc_only': 0.8590017064846417,
+ 'train_epoch_loss_avg_over_batch': 0.8065856672308939,
+ 'train_ra_bd_only': 0.14590443686006827}
+2026-03-19:20:12:10 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:12:10 [INFO    ] [inputaware.py:471] Epoch 87 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:12:10 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:12:41 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:12:41 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:12:41 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:13:30 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.15680529313607955,
+ 'clean_test_loss_avg_over_batch': 0.3413973547801187,
+ 'cross_test_loss_avg_over_batch': 0.6771431010735186,
+ 'epoch': 87,
+ 'ra_test_loss_avg_over_batch': 3.7483497673357036,
+ 'test_acc': 0.9078,
+ 'test_asr': 0.9516666666666667,
+ 'test_cross_acc': 0.7848,
+ 'test_ra': 0.04511111111111111,
+ 'train_acc': 0.96012,
+ 'train_acc_clean_only': 0.9717654588420638,
+ 'train_asr_bd_only': 0.962457337883959,
+ 'train_cross_acc_only': 0.8568686006825939,
+ 'train_epoch_loss_avg_over_batch': 0.8134683670900057,
+ 'train_ra_bd_only': 0.14185153583617746}
+2026-03-19:20:13:31 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:13:31 [INFO    ] [inputaware.py:471] Epoch 88 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:13:31 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:14:00 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:14:00 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:14:00 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:14:48 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.2954102120768856,
+ 'clean_test_loss_avg_over_batch': 0.36111623161955725,
+ 'cross_test_loss_avg_over_batch': 0.5697965142847616,
+ 'epoch': 88,
+ 'ra_test_loss_avg_over_batch': 3.0620412960858414,
+ 'test_acc': 0.9051,
+ 'test_asr': 0.8961111111111111,
+ 'test_cross_acc': 0.809,
+ 'test_ra': 0.09755555555555556,
+ 'train_acc': 0.96438,
+ 'train_acc_clean_only': 0.97713174478141,
+ 'train_asr_bd_only': 0.9592576791808873,
+ 'train_cross_acc_only': 0.8590017064846417,
+ 'train_epoch_loss_avg_over_batch': 0.8036302401281684,
+ 'train_ra_bd_only': 0.14377133105802048}
+2026-03-19:20:14:48 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:14:48 [INFO    ] [inputaware.py:471] Epoch 89 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:14:48 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:15:18 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:15:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:15:18 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:16:05 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.1759002075438768,
+ 'clean_test_loss_avg_over_batch': 0.37836192718035055,
+ 'cross_test_loss_avg_over_batch': 0.6321585359452646,
+ 'epoch': 89,
+ 'ra_test_loss_avg_over_batch': 3.495464321593164,
+ 'test_acc': 0.905,
+ 'test_asr': 0.9437777777777778,
+ 'test_cross_acc': 0.7957,
+ 'test_ra': 0.05344444444444445,
+ 'train_acc': 0.96504,
+ 'train_acc_clean_only': 0.976860968885388,
+ 'train_asr_bd_only': 0.9598976109215017,
+ 'train_cross_acc_only': 0.8677474402730375,
+ 'train_epoch_loss_avg_over_batch': 0.8018407522869841,
+ 'train_ra_bd_only': 0.13630546075085323}
+2026-03-19:20:16:06 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:16:06 [INFO    ] [inputaware.py:471] Epoch 90 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:16:06 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:16:36 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:16:36 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:16:36 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:17:23 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.15194668778231446,
+ 'clean_test_loss_avg_over_batch': 0.32622419080779524,
+ 'cross_test_loss_avg_over_batch': 0.613696277141571,
+ 'epoch': 90,
+ 'ra_test_loss_avg_over_batch': 3.6771790981292725,
+ 'test_acc': 0.9131,
+ 'test_asr': 0.957,
+ 'test_cross_acc': 0.7982,
+ 'test_ra': 0.04,
+ 'train_acc': 0.96404,
+ 'train_acc_clean_only': 0.9747439936983064,
+ 'train_asr_bd_only': 0.9633105802047781,
+ 'train_cross_acc_only': 0.8720136518771331,
+ 'train_epoch_loss_avg_over_batch': 0.809000701703074,
+ 'train_ra_bd_only': 0.12627986348122866}
+2026-03-19:20:17:23 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:17:23 [INFO    ] [inputaware.py:471] Epoch 91 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:17:23 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:17:52 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:17:52 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:17:52 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:18:39 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.09051973191680203,
+ 'clean_test_loss_avg_over_batch': 0.3272530447833146,
+ 'cross_test_loss_avg_over_batch': 0.7952023133446898,
+ 'epoch': 91,
+ 'ra_test_loss_avg_over_batch': 5.389749876210387,
+ 'test_acc': 0.9079,
+ 'test_asr': 0.9702222222222222,
+ 'test_cross_acc': 0.7592,
+ 'test_ra': 0.028444444444444446,
+ 'train_acc': 0.96362,
+ 'train_acc_clean_only': 0.9755317053958251,
+ 'train_asr_bd_only': 0.9613907849829352,
+ 'train_cross_acc_only': 0.8626279863481229,
+ 'train_epoch_loss_avg_over_batch': 0.8049776197394447,
+ 'train_ra_bd_only': 0.13993174061433447}
+2026-03-19:20:18:40 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:18:40 [INFO    ] [inputaware.py:471] Epoch 92 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:18:40 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:19:10 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:19:10 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:19:10 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:19:58 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.13343794486472305,
+ 'clean_test_loss_avg_over_batch': 0.35377509844831273,
+ 'cross_test_loss_avg_over_batch': 0.7966818243642396,
+ 'epoch': 92,
+ 'ra_test_loss_avg_over_batch': 4.463348758052772,
+ 'test_acc': 0.9061,
+ 'test_asr': 0.9536666666666667,
+ 'test_cross_acc': 0.7503,
+ 'test_ra': 0.043666666666666666,
+ 'train_acc': 0.96504,
+ 'train_acc_clean_only': 0.9771563607719574,
+ 'train_asr_bd_only': 0.9618174061433447,
+ 'train_cross_acc_only': 0.8632679180887372,
+ 'train_epoch_loss_avg_over_batch': 0.8030569419226683,
+ 'train_ra_bd_only': 0.13438566552901024}
+2026-03-19:20:19:58 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:19:58 [INFO    ] [inputaware.py:471] Epoch 93 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:19:58 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:20:28 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:20:28 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:20:28 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:21:15 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.24131032488715481,
+ 'clean_test_loss_avg_over_batch': 0.3185675447877449,
+ 'cross_test_loss_avg_over_batch': 0.5450705723671974,
+ 'epoch': 93,
+ 'ra_test_loss_avg_over_batch': 3.2382506518296794,
+ 'test_acc': 0.9122,
+ 'test_asr': 0.914,
+ 'test_cross_acc': 0.8193,
+ 'test_ra': 0.08288888888888889,
+ 'train_acc': 0.9641,
+ 'train_acc_clean_only': 0.9765409610082709,
+ 'train_asr_bd_only': 0.9579778156996587,
+ 'train_cross_acc_only': 0.8624146757679181,
+ 'train_epoch_loss_avg_over_batch': 0.8065056694133202,
+ 'train_ra_bd_only': 0.14910409556313994}
+2026-03-19:20:21:16 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:21:16 [INFO    ] [inputaware.py:471] Epoch 94 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:21:16 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:21:45 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:21:45 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:21:45 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:22:33 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.2787171564471554,
+ 'clean_test_loss_avg_over_batch': 0.34156785839343373,
+ 'cross_test_loss_avg_over_batch': 0.5286336850516403,
+ 'epoch': 94,
+ 'ra_test_loss_avg_over_batch': 3.195474426511308,
+ 'test_acc': 0.9112,
+ 'test_asr': 0.9071111111111111,
+ 'test_cross_acc': 0.8296,
+ 'test_ra': 0.08688888888888889,
+ 'train_acc': 0.96692,
+ 'train_acc_clean_only': 0.9779933044505711,
+ 'train_asr_bd_only': 0.9667235494880546,
+ 'train_cross_acc_only': 0.871160409556314,
+ 'train_epoch_loss_avg_over_batch': 0.7978112760102353,
+ 'train_ra_bd_only': 0.1309726962457338}
+2026-03-19:20:22:34 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:22:34 [INFO    ] [inputaware.py:471] Epoch 95 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:22:34 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:23:08 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:23:08 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:23:08 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:24:15 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.19451043156670852,
+ 'clean_test_loss_avg_over_batch': 0.36181851787657676,
+ 'cross_test_loss_avg_over_batch': 0.6523382490194296,
+ 'epoch': 95,
+ 'ra_test_loss_avg_over_batch': 3.6845150497597707,
+ 'test_acc': 0.9003,
+ 'test_asr': 0.9363333333333334,
+ 'test_cross_acc': 0.7999,
+ 'test_ra': 0.05988888888888889,
+ 'train_acc': 0.965,
+ 'train_acc_clean_only': 0.976270185112249,
+ 'train_asr_bd_only': 0.9633105802047781,
+ 'train_cross_acc_only': 0.8690273037542662,
+ 'train_epoch_loss_avg_over_batch': 0.808255343181093,
+ 'train_ra_bd_only': 0.1407849829351536}
+2026-03-19:20:24:16 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:24:16 [INFO    ] [inputaware.py:471] Epoch 96 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:24:16 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:24:50 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:24:50 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:24:50 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:25:58 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.25145909987704856,
+ 'clean_test_loss_avg_over_batch': 0.35487511037271235,
+ 'cross_test_loss_avg_over_batch': 0.6033571498303474,
+ 'epoch': 96,
+ 'ra_test_loss_avg_over_batch': 3.386773515755022,
+ 'test_acc': 0.9059,
+ 'test_asr': 0.9133333333333333,
+ 'test_cross_acc': 0.8098,
+ 'test_ra': 0.08311111111111111,
+ 'train_acc': 0.96456,
+ 'train_acc_clean_only': 0.9757778653012997,
+ 'train_asr_bd_only': 0.9628839590443686,
+ 'train_cross_acc_only': 0.8690273037542662,
+ 'train_epoch_loss_avg_over_batch': 0.8004167142426571,
+ 'train_ra_bd_only': 0.134598976109215}
+2026-03-19:20:25:58 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:25:58 [INFO    ] [inputaware.py:471] Epoch 97 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:25:58 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:26:32 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:26:32 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:26:32 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:27:40 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.0757314635729286,
+ 'clean_test_loss_avg_over_batch': 0.3228003085602688,
+ 'cross_test_loss_avg_over_batch': 0.6552903563538685,
+ 'epoch': 97,
+ 'ra_test_loss_avg_over_batch': 4.46219046015135,
+ 'test_acc': 0.9149,
+ 'test_asr': 0.982,
+ 'test_cross_acc': 0.782,
+ 'test_ra': 0.017666666666666667,
+ 'train_acc': 0.96448,
+ 'train_acc_clean_only': 0.9766394249704609,
+ 'train_asr_bd_only': 0.9573378839590444,
+ 'train_cross_acc_only': 0.8662542662116041,
+ 'train_epoch_loss_avg_over_batch': 0.8035436609516973,
+ 'train_ra_bd_only': 0.13630546075085323}
+2026-03-19:20:27:41 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:27:41 [INFO    ] [inputaware.py:471] Epoch 98 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:27:41 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:28:14 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:28:14 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:28:14 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:29:23 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.17190501125345767,
+ 'clean_test_loss_avg_over_batch': 0.35214519217798984,
+ 'cross_test_loss_avg_over_batch': 0.5980909312073188,
+ 'epoch': 98,
+ 'ra_test_loss_avg_over_batch': 3.6949283237188633,
+ 'test_acc': 0.9003,
+ 'test_asr': 0.946,
+ 'test_cross_acc': 0.7996,
+ 'test_ra': 0.051555555555555556,
+ 'train_acc': 0.96456,
+ 'train_acc_clean_only': 0.9761471051595116,
+ 'train_asr_bd_only': 0.962457337883959,
+ 'train_cross_acc_only': 0.8662542662116041,
+ 'train_epoch_loss_avg_over_batch': 0.8067031290829944,
+ 'train_ra_bd_only': 0.1367320819112628}
+2026-03-19:20:29:23 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:29:23 [INFO    ] [inputaware.py:471] Epoch 99 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:29:23 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:29:57 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:29:57 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:29:57 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:31:44 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.1153986265122051,
+ 'clean_test_loss_avg_over_batch': 0.35089835581145706,
+ 'cross_test_loss_avg_over_batch': 0.6494311456438862,
+ 'epoch': 99,
+ 'ra_test_loss_avg_over_batch': 4.0306494336732674,
+ 'test_acc': 0.9048,
+ 'test_asr': 0.9658888888888889,
+ 'test_cross_acc': 0.7868,
+ 'test_ra': 0.03333333333333333,
+ 'train_acc': 0.96758,
+ 'train_acc_clean_only': 0.9791502560063017,
+ 'train_asr_bd_only': 0.96160409556314,
+ 'train_cross_acc_only': 0.8732935153583617,
+ 'train_epoch_loss_avg_over_batch': 0.7961329622646732,
+ 'train_ra_bd_only': 0.13438566552901024}
+2026-03-19:20:31:44 [DEBUG   ] [trainer_cls.py:72] return df with np.nan and None converted by str()
+2026-03-19:20:31:44 [INFO    ] [inputaware.py:471] Epoch 100 - cifar10 - all2one | mask_density: 0.032 - lambda_div: 1:
+2026-03-19:20:31:44 [INFO    ] [inputaware.py:817]  Training:
+2026-03-19:20:32:27 [INFO    ] [inputaware.py:956] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:32:27 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:32:27 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:34:26 [INFO    ] [trainer_cls.py:65] {'bd_test_loss_avg_over_batch': 0.15113357192193957,
+ 'clean_test_loss_avg_over_batch': 0.3607236580758155,
+ 'cross_test_loss_avg_over_batch': 0.6585642374769042,
+ 'epoch': 100,
+ 'ra_test_loss_avg_over_batch': 3.9835413241050612,
+ 'test_acc': 0.9017,
+ 'test_asr': 0.9534444444444444,
+ 'test_cross_acc': 0.7839,
+ 'test_ra': 0.04388888888888889,
+ 'train_acc': 0.965,
+ 'train_acc_clean_only': 0.9766394249704609,
+ 'train_asr_bd_only': 0.9641638225255973,
+ 'train_cross_acc_only': 0.8649744027303754,
+ 'train_epoch_loss_avg_over_batch': 0.8074582825841197,
+ 'train_ra_bd_only': 0.134598976109215}
+2026-03-19:20:34:26 [DEBUG   ] [trainer_cls.py:88] return df with np.nan and None converted by str()
+2026-03-19:20:34:26 [INFO    ] [bd_dataset_v2.py:133] save file format is .png
+2026-03-19:20:34:26 [INFO    ] [inputaware.py:624] Compose(
+    Normalize(mean=[0.0, 0.0, 0.0], std=[4.048582995951417, 4.11522633744856, 3.8314176245210727])
+    Normalize(mean=[-0.4914, -0.4822, -0.4465], std=[1.0, 1.0, 1.0])
+)
+2026-03-19:20:34:50 [INFO    ] [save_load_attack.py:141] saving...
+2026-03-19:20:34:50 [DEBUG   ] [save_load_attack.py:142] location : ./record/inputaware_experiment_1/attack_result.pt
+2026-03-19:20:34:50 [INFO    ] [save_load_attack.py:149] Saved, folder path: ./record/inputaware_experiment_1
