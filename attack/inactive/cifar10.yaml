@@ -1,0 +1,23 @@
+attack: inactive
+attack_label_trans: all2one
+attack_target: 0
+model: preactresnet18
+img_size: [32, 32, 3]
+batch_size: 128
+epochs: 100
+lr: 0.1
+momentum: 0.9
+weight_decay: 5.0e-4
+# 标准调度器参数
+scheduler: MultiStepLR
+milestones: [50, 75]
+gamma: 0.1
+
+# 关键：显式定义投毒比例
+pratio: 0.1
+
+# INACTIVE 特有参数
+lr_G: 0.001           # 生成器学习率
+lambda_ce: 1.0        # 攻击成功率权重
+lambda_color: 10.0    # 颜色损失权重 (HSV)，提高此值可增强隐蔽性
+lambda_mse: 1.0       # 像素差异权重
